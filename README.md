@@ -10,7 +10,7 @@ Multivariate linear regression, neural network, and XGBoost models were trained 
 
 In contrast, the neural network and XGBoost models utilized a different set of features: week number, daily oil prices, day of the week, holiday indicator, New Year indicator, product family, number of products on promotion within each product family, and store number.
 ### Result
-All three models achieved strong performance, each with an R² score of approximately 91%.
+All three models delivered strong performance, each with an R² score of around 91%. Introducing lag features could further enhance accuracy.
 
 ## Important Notice
 
