@@ -6,13 +6,13 @@ The goal of this kaggle project/competition is to develop a machine learning mod
 - Detected periods with maximum sales variation to understand seasonality, using periodogram analysis
 - Utilized autocorrelation and partial autocorrelation plots to identify relevant lags for improving the forecasting model
 ### Modeling
-Multivariate linear regression, neural network, and XGBoost models were trained on the dataset. For the multivariate regression model, we incorporated trend and seasonal features generated through a deterministic process, along with holiday and New Year indicators. This model was fitted for each combination of the 54 stores and 33 product families, resulting in a total of 1,782 models.
+Multivariate linear regression, neural network, and XGBoost models were trained on the dataset. For the multivariate regression model, trend and seasonal features generated through a deterministic process were incorporated , along with holiday and New Year indicators. This model was fitted for each combination of the 54 stores and 33 product families, resulting in a total of 1,782 models.
 
 In contrast, the neural network and XGBoost models utilized a different set of features: week number, daily oil prices, day of the week, holiday indicator, New Year indicator, product family, number of products on promotion within each product family, and store number.
 
 The models were trained using data from January 1, 2016, to August 15, 2017.
 ### Result
-All three models delivered strong performance, each with an R² score of around 91%. Introducing lag features could further enhance accuracy.
+XGBoost and multivariate linear regression models demonstrated slightly stronger performance, achieving R² scores of approximately 91%, compared to the neural network model, which achieved an R² of 89%. Incorporating lag features could potentially improve model accuracy further.
 
 ## Important Notice
 
